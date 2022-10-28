@@ -17,7 +17,7 @@ mainBtn.addEventListener("click", function() {
 
     } else {    
 
-        if (eta = 3) { 
+        if (eta == 3) { 
 
             const sconto = prezzoIniziale*0.4;  
 
@@ -25,10 +25,12 @@ mainBtn.addEventListener("click", function() {
 
             const prezzoArrotondato = Math.round(prezzoFinale*100)/100; 
 
+            console.log (prezzoArrotondato)
+
             const paragrafo = document.getElementById("paragrafo");
             paragrafo.innerHTML = `Il prezzo del biglietto è ${prezzoArrotondato}€`;    
 
-        } else if (eta = 2) {  
+        } else if (eta == 2) {  
 
             const sconto = prezzoIniziale*0.2;  
 
@@ -39,7 +41,7 @@ mainBtn.addEventListener("click", function() {
             const paragrafo = document.getElementById("paragrafo");
             paragrafo.innerHTML = `Il prezzo del biglietto è ${prezzoArrotondato}€`;    
 
-        } else if (eta = 1){    
+        } else if (eta == 1){    
 
             const sconto = 0;   
 
