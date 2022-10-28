@@ -10,16 +10,105 @@
 </head>
 <body>
     
-    <input type="text" id="nome-utente">
-    <input type="text" id="numero">
-    <select id="età">
-        <option value="1">Maggiorenne</option>
-        <option value="2">Minorenne</option>
-        <option value="3">Pensionato</option>
-    </select>
-    <button id="pulsante-avvio">Genera</button>
-    <p id="paragrafo"></p>
-    <p id="biglietto"></p>
+    <div class="container">
+        <h1 class="text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+
+        <div class="carta rounded">
+            <div class="row p-4 justify-content-around">
+                <div class="col-2">
+                    <div class="d-flex flex-column align-items-center">
+                        <h5>Nome Cognome</h5>
+                        <input type="text" id="nome-utente">
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <div class="d-flex flex-column align-items-center">
+                        <h5>Km da percorrere</h5>
+                        <input type="text" id="numero">
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <div class="d-flex flex-column align-items-center">
+                        <h5>Fascie d'età</h5>
+                        <select id="età">
+                            <option value="1">Maggiorenne</option>
+                            <option value="2">Minorenne</option>
+                            <option value="3">Pensionato</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mt-4 p-4">
+                    <div class="col-2">
+                        <div class="d-flex justify-content-around">
+                            <button id="pulsante-avvio">Genera</button>
+                            <button id="pulsante-annulla">Annulla</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h1 class="text-center">IL TUO BIGLIETTO</h1>
+
+        <div class="carta p-4">
+            <h4>DETTAGLIO PASSEGGERI</h4>
+
+            <div class="row w-100 filo m-0">
+                <div class="col-3 dark-gray">
+                    <div class="p-2">
+                        <h4>NOME PASSEGGERO</h4>
+                        <h5 id="biglietto"></h5>
+                    </div>
+                </div>
+
+                <div class="col-9 dati">
+                    <div class="row">
+                        <div class="col">
+                            <div class="p-2">
+
+                                <h6 class="mb-5">Offerta</h6>
+
+                                <span>Biglietto Standard</span>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="p-2">
+                                <h6 class="mb-5">Carrozza</h6>
+
+                                <span>5</span>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="p-2">
+                                <h6 class="mb-5">Codice CP</h6>
+
+                                <span>92911</span>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="p-2">
+                                <h6 class="mb-5">Costo biglietto</h6>
+
+                                <p id="paragrafo"></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <script type="text/javascript" src="JS/main.js"></script>
 </body>
