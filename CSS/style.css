@@ -1,0 +1,48 @@
+body{
+    background-color: crimson;
+}
+
+h1{
+    color: white;
+}
+
+h5{
+    color: crimson;
+}
+
+.carta{
+    background-color: white;
+}
+
+.dark-gray{
+    background-color: gray;
+}
+
+button{
+    background-color: darkgray;
+    color: crimson;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+input{
+    border-color: crimson;
+    border-radius: 7px;
+}
+
+select{
+    border-color: crimson;
+    border-radius: 7px;
+}
+
+.dati{
+    padding: 0;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+#biglietto{
+    color: #212529;
+    font-weight: bold;
+}

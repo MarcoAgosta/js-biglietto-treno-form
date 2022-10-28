@@ -25,10 +25,13 @@ mainBtn.addEventListener("click", function() {
             const prezzoArrotondato = Math.round(prezzoFinale*100)/100; 
 
             const paragrafo = document.getElementById("paragrafo");
-            paragrafo.innerHTML = `Il prezzo del biglietto è ${prezzoArrotondato}€`;
+            paragrafo.innerHTML = `${prezzoArrotondato}€`;
 
             const nomeUtente = document.getElementById("biglietto")
             nomeUtente.innerHTML = `${nome}`
+
+            const tipoBiglietto = document.getElementById("tipo-biglietto")
+            tipoBiglietto.innerHTML = `Biglietto scontato`
 
         } else if (eta == 2) {  
 
@@ -39,10 +42,13 @@ mainBtn.addEventListener("click", function() {
             const prezzoArrotondato = Math.round(prezzoFinale*100)/100; 
 
             const paragrafo = document.getElementById("paragrafo");
-            paragrafo.innerHTML = `Il prezzo del biglietto è ${prezzoArrotondato}€`;
+            paragrafo.innerHTML = `${prezzoArrotondato}€`;
 
             const nomeUtente = document.getElementById("biglietto")
-            nomeUtente.innerHTML = `${nome}` 
+            nomeUtente.innerHTML = `${nome}`
+
+            const tipoBiglietto = document.getElementById("tipo-biglietto")
+            tipoBiglietto.innerHTML = `Biglietto ridotto`
 
         } else if (eta == 1){    
 
@@ -53,10 +59,13 @@ mainBtn.addEventListener("click", function() {
             const prezzoArrotondato = Math.round(prezzoFinale*100)/100; 
 
             const paragrafo = document.getElementById("paragrafo");
-            paragrafo.innerHTML = `Il prezzo del biglietto è ${prezzoArrotondato}€`;
-            
+            paragrafo.innerHTML = `${prezzoArrotondato}€`;
+
             const nomeUtente = document.getElementById("biglietto")
-            nomeUtente.innerHTML = `${nome}` 
+            nomeUtente.innerHTML = `${nome}`
+
+            const tipoBiglietto = document.getElementById("tipo-biglietto")
+            tipoBiglietto.innerHTML = `Biglietto standard`
 
         }
     }
