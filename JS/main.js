@@ -3,13 +3,12 @@ const mainBtn = document.getElementById("pulsante-avvio")
 mainBtn.addEventListener("click", function() {
 
     const kilometri = document.getElementById("numero").value;
-    const eta = document.getElementById("età").value;    
-
-    console.log (kilometri)
-    console.log (eta)
+    const eta = document.getElementById("età").value;   
+    const nome = document.getElementById("nome-utente").value;
 
     const prezzoIniziale = kilometri*0.21;  
 
+    console.log(nome)
 
     if (isNaN(kilometri)) { 
 
@@ -25,10 +24,11 @@ mainBtn.addEventListener("click", function() {
 
             const prezzoArrotondato = Math.round(prezzoFinale*100)/100; 
 
-            console.log (prezzoArrotondato)
-
             const paragrafo = document.getElementById("paragrafo");
-            paragrafo.innerHTML = `Il prezzo del biglietto è ${prezzoArrotondato}€`;    
+            paragrafo.innerHTML = `Il prezzo del biglietto è ${prezzoArrotondato}€`;
+
+            const nomeUtente = document.getElementById("biglietto")
+            nomeUtente.innerHTML = `${nome}`
 
         } else if (eta == 2) {  
 
@@ -39,7 +39,10 @@ mainBtn.addEventListener("click", function() {
             const prezzoArrotondato = Math.round(prezzoFinale*100)/100; 
 
             const paragrafo = document.getElementById("paragrafo");
-            paragrafo.innerHTML = `Il prezzo del biglietto è ${prezzoArrotondato}€`;    
+            paragrafo.innerHTML = `Il prezzo del biglietto è ${prezzoArrotondato}€`;
+
+            const nomeUtente = document.getElementById("biglietto")
+            nomeUtente.innerHTML = `${nome}` 
 
         } else if (eta == 1){    
 
@@ -50,7 +53,10 @@ mainBtn.addEventListener("click", function() {
             const prezzoArrotondato = Math.round(prezzoFinale*100)/100; 
 
             const paragrafo = document.getElementById("paragrafo");
-            paragrafo.innerHTML = `Il prezzo del biglietto è ${prezzoArrotondato}€`;    
+            paragrafo.innerHTML = `Il prezzo del biglietto è ${prezzoArrotondato}€`;
+            
+            const nomeUtente = document.getElementById("biglietto")
+            nomeUtente.innerHTML = `${nome}` 
 
         }
     }
