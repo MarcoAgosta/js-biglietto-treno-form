@@ -46,3 +46,7 @@ select{
     color: #212529;
     font-weight: bold;
 }
+
+input{
+    text-align: center;
+}
