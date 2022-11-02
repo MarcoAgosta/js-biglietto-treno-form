@@ -72,3 +72,18 @@ mainBtn.addEventListener("click", function() {
 
 
 } )
+
+const secondaryBtn = document.getElementById("pulsante-annulla")
+
+secondaryBtn.addEventListener("click", function() {
+
+    const paragrafo = document.getElementById("paragrafo");
+    paragrafo.innerHTML = ``;
+
+    const nomeUtente = document.getElementById("biglietto")
+    nomeUtente.innerHTML = ``
+
+    const tipoBiglietto = document.getElementById("tipo-biglietto")
+    tipoBiglietto.innerHTML = ``
+
+} )

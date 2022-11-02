@@ -50,3 +50,7 @@ select{
 input{
     text-align: center;
 }
+
+.filo{
+    min-height: 126px;
+}
